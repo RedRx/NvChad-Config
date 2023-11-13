@@ -118,6 +118,115 @@ M.general = {
       "<cmd>:LspInfo<CR>",
       "LspInfo",
     },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │     Lazygit                                              │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<leader>ggg"] = { "<cmd>:LazyGit<cr>", desc = "LazyGit" },
+    ["<leader>ggc"] = {
+      "<cmd>:LazyGitCurrentFile<cr>",
+      desc = "LazyGitCurrentFile",
+    },
+    ["<leader>ggf"] = { "<cmd>:LazyGitFilter<cr>", desc = "LazyGitFilter" },
+    ["<leader>ggd"] = {
+      "<cmd>:LazyGitFilterCurrentFile<cr>",
+      desc = "LazyGitFilterCurrentFile",
+    },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │     Undotree                                             │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<C-u>"] = { "<cmd>UndotreeToggle<cr>", desc = "UndotreeToggle" },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │     Find TodoTelescope                                   │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<leader>ft"] = {
+      "<cmd>:TodoTelescope<CR>",
+      "Todo Telescope",
+    },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │ Compiler                                                 │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<leader>co"] = {
+      "<cmd>:CompilerOpen<CR>",
+      "Open compiler",
+    },
+    ["<leader>cs"] = {
+      "<cmd>:CompilerStop<CR>",
+      "Stop compiler",
+    },
+    ["<leader>ct"] = {
+      "<cmd>:CompilerToggleResults<CR>",
+      "Toggle Results of compiler",
+    },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │ SnipRun                                                  │
+    --  ╰──────────────────────────────────────────────────────────╯
+    -- -- NOTE: For michaelb/sniprun
+    -- -- PERF: SnipRun must manual in Vistual mode and select code
+    ["<leader>sc"] = {
+      "<cmd>:SnipClose<CR>",
+      "Deactivate SnipRun",
+    },
+    ["<leader>si"] = {
+      "<cmd>:SnipInfo<CR>",
+      "Info of SnipRun",
+    },
+    ["<leader>sC"] = {
+      "<cmd>:SnipReplMemoryClean<CR>",
+      "Clean memory of SnipRun",
+    },
+    ["<leader>sr"] = {
+      "<cmd>:SnipRun<CR>",
+      "SnipRun",
+    },
+    ["<leader>se"] = {
+      "<cmd>:SnipReset<CR>",
+      "Reset SnipRun",
+    },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │ Diffview                                                 │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<leader>Do"] = {
+      "<cmd>:DiffviewOpen<CR>",
+      "DiffviewOpen",
+    },
+    ["<leader>Dc"] = {
+      "<cmd>:DiffviewClose<CR>",
+      "DiffviewClose",
+    },
+    ["<leader>Dl"] = {
+      "<cmd>:DiffviewLog<CR>",
+      "DiffviewLog",
+    },
+    ["<leader>Dr"] = {
+      "<cmd>:DiffviewRefresh<CR>",
+      "DiffviewRefresh",
+    },
+    ["<leader>Df"] = {
+      "<cmd>:DiffviewFileHistory<CR>",
+      "DiffviewFileHistory",
+    },
+    ["<leader>DF"] = {
+      "<cmd>:DiffviewFousFiles<CR>",
+      "DiffviewFousFiles",
+    },
+    ["<leader>Dt"] = {
+      "<cmd>:DiffviewToggleFiles<CR>",
+      "DiffviewToggleFiles",
+    },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │     Twilight                                             │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<HOME><HOME>"] = {
+      "<cmd>Twilight<cr>",
+      desc = "Twilight Code Color",
+    },
   },
   i = {
     ["<C-v>"] = { '<C-o>"+p', "Paste In InsertMode" },
