@@ -70,13 +70,7 @@ M.general = {
 
     ["<leader>wq"] = { "<cmd>:wq<CR>", "Save and Quit" },
     ["<leader>ww"] = { "<cmd>:w<CR>", "Save File" },
-
-    ["<leader>Q"] = {
-      function()
-        vim.diagnostic.setloclist()
-      end,
-      "Diagnostic setloclist",
-    },
+    ["<leader>Q"] = { "<cmd>:q!<CR>", "Quit" },
     ["gd"] = {
       telescope_lsp_definitions,
       "LSP definitions",
