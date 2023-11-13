@@ -8,6 +8,9 @@ return {
       },
       d = {
         name = "󱔗 DevDocs,   Debugger",
+        p = {
+          name = "  Telescope DAP",
+        },
       },
       D = {
         name = "󰕚  DiffView",
