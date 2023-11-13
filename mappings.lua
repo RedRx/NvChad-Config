@@ -43,13 +43,13 @@ end
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
- ["gl"] = {
+    ["gl"] = {
       function()
         vim.diagnostic.open_float()
       end,
       "Hover diagnostics",
     },
-["L"] = {
+    ["L"] = {
       function()
         require("nvchad.tabufline").tabuflineNext()
       end,
@@ -68,7 +68,7 @@ M.general = {
     ["X"] = { '"_X', desc = "Delete one word but not copy" },
     ["C"] = { '"_C', desc = "Delete word but not copy" },
 
-["<leader>wq"] = { "<cmd>:wq<CR>", "Save and Quit" },
+    ["<leader>wq"] = { "<cmd>:wq<CR>", "Save and Quit" },
     ["<leader>ww"] = { "<cmd>:w<CR>", "Save File" },
 
     ["<leader>Q"] = {
@@ -87,11 +87,11 @@ M.general = {
       "LSP references",
     },
 
--- Add more of default mapping
+    -- Add more of default mapping
     ["<leader>/"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
     ["<leader>?"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
 
- ["<leader>e"] = { "<cmd>:NvimTreeToggle<CR>", "Toggle NvimTree" },
+    ["<leader>e"] = { "<cmd>:NvimTreeToggle<CR>", "Toggle NvimTree" },
     ["<leader>o"] = { toggle_nvimtree, "Toggle/Focus NvimTree" },
     ["gm"] = {
       function()
@@ -100,14 +100,14 @@ M.general = {
       "LSP formatting",
     },
 
-  ["+"] = { "<cmd>vertical resize +1<cr>", desc = "Vertical resize +" }, -- use resize with Ctrl + arrow
+    ["+"] = { "<cmd>vertical resize +1<cr>", desc = "Vertical resize +" }, -- use resize with Ctrl + arrow
     ["_"] = { "<cmd>vertical resize -1<cr>", desc = "Vertical resize -" },
     [")"] = { "<cmd>horizontal resize +1<cr>", desc = "Horizontal resize +" }, -- use resize with Ctrl + arrow
     ["("] = { "<cmd>horizontal resize -1<cr>", desc = "Horizontal resize -" },
     ["<leader>sv"] = { "<cmd>:vsplit<cr>", desc = "Vertical split" },
     ["<leader>sh"] = { "<cmd>:split<cr>", desc = "Horizontal split" },
 
-  ["<leader>tw"] = {
+    ["<leader>tw"] = {
       "<cmd>set wrap!<CR>",
       "Toggle wrap long lines",
     },
@@ -126,9 +126,9 @@ M.general = {
     ["jk"] = { "<esc>" },
   },
   v = {
-    [">"] = { ">gv", "indent"},
- [";"] = { ":", "enter command mode", opts = { nowait = true } },
-    -- ["<leader>S"] = { "<Plug>VSurround" },
+    [">"] = { ">gv", "indent" },
+    [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["<leader>S"] = { "<Plug>VSurround" },
   },
   t = {},
 }
