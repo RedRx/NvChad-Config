@@ -81,6 +81,11 @@ M.general = {
       "LSP references",
     },
 
+    ["<leader>ggh"] = {
+      "<cmd>:Alpha<CR>",
+      "Alpha Dashboard",
+    },
+
     -- Add more of default mapping
     ["<leader>/"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
     ["<leader>?"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
