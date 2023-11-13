@@ -227,6 +227,11 @@ M.general = {
       "<cmd>Twilight<cr>",
       desc = "Twilight Code Color",
     },
+
+    --  ╭──────────────────────────────────────────────────────────╮
+    --  │     MarkdownPreview                                      │
+    --  ╰──────────────────────────────────────────────────────────╯
+    ["<leader>mp"] = { "<cmd>:MarkdownPreview<CR>", "MarkdownPreview" },
   },
   i = {
     ["<C-v>"] = { '<C-o>"+p', "Paste In InsertMode" },

@@ -37,16 +37,16 @@ return {
         name = " Octo",
       },
       p = {
-        name = "  Lazy,   Mason",
+        name = "  Lazy,   Mason, PickHiddenTerm",
       },
       q = {
         name = "󰐃 persistence",
       },
       r = {
-        name = "󱥉 Refactor, Rename, ToggleLine",
+        name = "󰑕 Rename, ToggleLine",
       },
       s = {
-        name = "Split, 󰙨 SnipRun, Maximizer",
+        name = " Split, 󰙨 SnipRun, 󱐪 Maximizer",
       },
       S = {
         name = "󰗅 Surrounding",
