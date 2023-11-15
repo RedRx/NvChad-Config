@@ -7,6 +7,7 @@
 local opt = vim.opt
 local g = vim.g
 local o = vim.o
+local keymap = vim.keymap
 
 --  ╭──────────────────────────────────────────────────────────╮
 --  │ NOTE: OPT Setting                                        │
@@ -15,6 +16,14 @@ opt.iskeyword:append "-" -- Append word when delete or select hello-Hello <- wil
 opt.iskeyword:append "_" -- Append word when delete or select hello-Hello <- will select all these words
 opt.wildignore:append { "*/node_modules/*" }
 opt.termguicolors = true
+opt.wrap = false
+opt.showcmd = true
+opt.title = true
+opt.autoindent = true
+opt.smartindent = true
+opt.hlsearch = true
+opt.ignorecase = true
+opt.smarttab = true
 
 --  ╭──────────────────────────────────────────────────────────╮
 --  │ NOTE: G Setting                                           │
@@ -29,6 +38,13 @@ g.set_encoding = "utf-8"
 --  │ NOTE: O Setting                                           │
 --  ╰──────────────────────────────────────────────────────────╯
 o.clipboard = "unnamedplus"
+
+--  ╭──────────────────────────────────────────────────────────╮
+--  │ NOTE: Keymap setting                                     │
+--  ╰──────────────────────────────────────────────────────────╯
+keymap.set("n", "+", "<C-a>")
+keymap.set("n", "-", "<C-x>")
+keymap.set("n", "dw", "diw")
 
 --
 --  ╭──────────────────────────────────────────────────────────╮
