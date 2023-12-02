@@ -16,7 +16,7 @@ opt.iskeyword:append "-" -- Append word when delete or select hello-Hello <- wil
 opt.iskeyword:append "_" -- Append word when delete or select hello-Hello <- will select all these words
 opt.wildignore:append { "*/node_modules/*" }
 opt.termguicolors = true
-opt.wrap = false
+opt.wrap = true
 opt.showcmd = true
 opt.title = true
 opt.autoindent = true
