@@ -9,6 +9,10 @@ local g = vim.g
 local o = vim.o
 local keymap = vim.keymap
 
+g.python3_host_prog = "/opt/homebrew/bin/python3"
+g.loaded_perl_provider = 0
+g.loaded_ruby_provider = 0
+
 --  ╭──────────────────────────────────────────────────────────╮
 --  │ NOTE: OPT Setting                                        │
 --  ╰──────────────────────────────────────────────────────────╯

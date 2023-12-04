@@ -27,4 +27,5 @@ return {
     "nvim-cmp",
   },
   event = { "CmdlineEnter" },
+  enabled = false,
 }
