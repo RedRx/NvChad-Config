@@ -1,5 +1,5 @@
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E06C75 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E5C07B gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent3 guifg=#61AFEF gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent4 guifg=#D19A66 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent5 guifg=#98C379 gui=nocombine]]
@@ -29,7 +29,7 @@ return {
         "IndentBlanklineIndent7",
       },
       show_current_context = true,
-      show_current_context_start = true,
+      show_current_context_start = false,
       scope = {
         enabled = false,
       },
