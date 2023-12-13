@@ -37,6 +37,7 @@ return {
         },
       }
     end,
+    enabled=false
   },
   {
     "catppuccin/nvim",
