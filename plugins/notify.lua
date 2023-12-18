@@ -22,5 +22,4 @@ return {
     vim.api.nvim_set_keymap("n", "<leader>un", "<cmd>Notify<CR>", { noremap = true, silent = true })
     vim.notify = notify
   end,
-  enabled = false,
 }

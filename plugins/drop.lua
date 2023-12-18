@@ -7,5 +7,4 @@ return {
     local theme = ({ "stars", "snow" })[math.random(1, 3)]
     require("drop").setup { theme = theme }
   end,
-  enabled = false,
 }
