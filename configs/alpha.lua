@@ -91,7 +91,7 @@ dashboard.section.buttons.val = {
 
 local function footer()
   local footer_text =
-    "Company: TOYLAB Co.,Ltd\n \n \n<Info> \nDeveloper: Teerapat Wassavanich \nGitHub: https://github.com/RedRx\nEmail: teerapat.tech@gmail.com\nIDE: Neovim & NvChad & VsCodeVim\nRole: Software Developer, CED"
+    "Company: TOYLAB Co.,Ltd\n \n \n<Info> \nDeveloper: Teerapat Wassavanich \nGitHub: https://github.com/RedRx\nEmail: teerapat.tech@gmail.com\nIDE: Neovim with NvChad & VsCodeVim\nRole: Software Developer, CED"
   if data_exists then
     local data_txt = custom_dasboard.footer
     if data_txt ~= nil then
