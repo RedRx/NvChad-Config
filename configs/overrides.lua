@@ -35,7 +35,6 @@ M.treesitter = {
     "jsdoc",
     "prisma",
     "sql",
-    "graphql",
     "bash",
     "dockerfile",
     "gitignore",
@@ -43,8 +42,10 @@ M.treesitter = {
     "http",
     "graphql",
     "gitcommit",
-    "gitignore",
     "regex",
+    "go",
+    "gomod",
+    "gowork",
   },
   incremental_selection = {
     enable = true,
@@ -67,6 +68,7 @@ M.mason = {
     -- lua stuff
     "lua-language-server",
     "stylua",
+    "selene",
 
     -- web dev stuff
     "css-lsp",
@@ -84,13 +86,20 @@ M.mason = {
     "json-lsp",
     "jsonlint",
     "eslint-lsp",
+    "eslint_d",
+    "erb-lint",
     "js-debug-adapter",
     "node-debug2-adapter",
     "graphql-language-service-cli",
     "spectral-language-server",
     "chrome-debug-adapter",
+    "firefox-debug-adapter",
     "vtsls",
     "rustywind",
+    "glint",
+    "oxlint",
+    "biome",
+    "trivy",
 
     -- json
     "cfn-lint",
@@ -110,11 +119,15 @@ M.mason = {
     "yaml-language-server",
     "yamlfmt",
     "yamllint",
+    "actionlint",
+    "hydra-lsp",
 
     -- Others
     "nginx-language-server",
     "beautysh",
     "vim-language-server",
+    "ast-grep",
+    "tree-sitter-cli",
 
     -- SQL
     "prisma-language-server",

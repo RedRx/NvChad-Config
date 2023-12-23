@@ -51,7 +51,7 @@ local sources = {
   -- Add the sources from your first config
   -- Feel free to remove any duplicates
   -- b.diagnostics.luacheck,
-  -- b.diagnostics.selene,
+  b.diagnostics.selene,
   b.diagnostics.yamllint,
   b.diagnostics.jsonlint,
   b.diagnostics.markuplint,
