@@ -132,6 +132,12 @@ M.general = {
       desc = "LazyGitFilterCurrentFile",
     },
 
+-- ╭──────────────────────────────────────────────────────────╮
+-- │ git override default                                     │
+-- ╰──────────────────────────────────────────────────────────╯
+    ["<leader>gm"] = { "<cmd> Telescope git_commits <CR>", "Git commits" },
+    ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "Git status" },
+
     --  ╭──────────────────────────────────────────────────────────╮
     --  │     Undotree                                             │
     --  ╰──────────────────────────────────────────────────────────╯

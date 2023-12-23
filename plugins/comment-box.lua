@@ -30,12 +30,12 @@ return {
     local cb = require "comment-box"
 
     -- left aligned fixed size box with left aligned text
-    keymap({ "n", "v" }, "<Leader>cm", cb.lbox, { desc = "CommentBox" })
+    keymap({ "n", "v" }, "<Leader>cm", cb.llbox, {desc = "Comment Box"})
     -- centered adapted box with centered text
-    keymap({ "n", "v" }, "<Leader>cc", cb.ccbox, { desc = "CommentBox Center" })
+    keymap({ "n", "v" }, "<Leader>cc", cb.ccbox, {desc = "Comment Box Center"})
 
     -- centered line
-    keymap("n", "<Leader>cl", cb.cline, { desc = "Add Center Line" })
+    -- keymap("n", "<Leader>bl", cb.cline, {})
     -- keymap("i", "<M-l>", cb.cline, {})
   end,
 }
