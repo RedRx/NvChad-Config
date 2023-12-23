@@ -21,6 +21,25 @@ local function on_attach(client, bufnr)
   end
 end
 
+-- Customize the diagnostics messages
+local function custom_publish_diagnostics(err, result, ctx, config)
+  if err ~= nil then
+    return
+  end
+
+  if result == nil then
+    return
+  end
+
+  local diagnostics = result.diagnostics
+
+  for _, diagnostic in ipairs(diagnostics) do
+    diagnostic.message = string.format("%s [%s]", diagnostic.message, diagnostic.source or "unknown")
+  end
+
+  vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
+end
+
 local sources = {
   -- FORMAT
   -- webdev stuff
@@ -28,7 +47,6 @@ local sources = {
   b.formatting.rustywind, -- tailwind
   b.formatting.yamlfmt, -- yaml
   b.formatting.yamlfix, -- yaml
-  -- b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
   b.formatting.prettier,
   b.formatting.prettierd,
 
@@ -47,16 +65,13 @@ local sources = {
   -- DIAGNOSTICS
   b.diagnostics.eslint,
   b.diagnostics.hadolint, -- docker
-
-  -- Add the sources from your first config
-  -- Feel free to remove any duplicates
-  -- b.diagnostics.luacheck,
   b.diagnostics.selene,
   b.diagnostics.yamllint,
   b.diagnostics.jsonlint,
   b.diagnostics.markuplint,
   b.diagnostics.sqlfluff,
 
+  -- Add more formatting if needed
   b.formatting.clang_format,
   b.formatting.sql_formatter,
   b.formatting.cbfmt,
@@ -67,5 +82,8 @@ local sources = {
 null_ls.setup {
   debug = true,
   sources = sources,
-  -- on_attach = on_attach,
+  on_attach = on_attach,
+  handlers = {
+    ["textDocument/publishDiagnostics"] = custom_publish_diagnostics,
+  },
 }
