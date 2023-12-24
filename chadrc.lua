@@ -21,7 +21,7 @@ M.ui = {
   hl_add = highlights.add,
   transparency = true,
   statusline = {
-    theme = "minimal",
+    theme = "vscode_colored",
     separator_style = "round",
   },
 }
