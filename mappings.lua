@@ -40,6 +40,16 @@ local function telescope_lsp_definitions()
   }
 end
 
+local function organize_imports()
+  local params = {
+    command = "_typescript.organizeImports",
+    arguments = { vim.api.nvim_buf_get_name(0) },
+    title = "",
+  }
+  vim.lsp.buf.execute_command(params)
+end
+
+
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
@@ -68,6 +78,9 @@ M.general = {
     ["X"] = { '"_X', desc = "Delete one word but not copy" },
     ["C"] = { '"_C', desc = "Delete word but not copy" },
 
+    -- organize imports
+    ["<leader>Oi"] = { organize_imports, "Organize TypeScript Imports" },
+    
     ["<leader>wq"] = { "<cmd>:wq<CR>", "Save and Quit" },
     ["<leader>ww"] = { "<cmd>:w<CR>", "Save File" },
     ["<leader>Q"] = { "<cmd>:q!<CR>", "Quit" },
