@@ -13,7 +13,7 @@ return {
   "lukas-reineke/indent-blankline.nvim",
   event = "VeryLazy",
   opts = {
-    char = "┃",
+    -- char = "┃",
     show_trailing_blankline_indent = true,
   },
   config = function()

@@ -148,9 +148,9 @@ M.mason = {
 -- git support in nvimtree
 M.nvimtree = {
   git = { enable = true },
-  actions = { open_file = { quit_on_open = true } }, -- NOTE: close when open file
+  actions = { open_file = { quit_on_open = false } }, -- NOTE: close when open file
   view = {
-    width = 40,
+    width = 35,
     side = "left",
     float = {
       enable = false,
