@@ -49,7 +49,6 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
-
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
@@ -80,7 +79,6 @@ M.general = {
 
     -- organize imports
     ["<leader>Oi"] = { organize_imports, "Organize TypeScript Imports" },
-    
     ["<leader>wq"] = { "<cmd>:wq<CR>", "Save and Quit" },
     ["<leader>ww"] = { "<cmd>:w<CR>", "Save File" },
     ["<leader>Q"] = { "<cmd>:q!<CR>", "Quit" },
@@ -112,7 +110,7 @@ M.general = {
       "LSP formatting",
     },
 
-    ["+"] = { "<cmd>vertical resize +1<cr>", desc = "Vertical resize +" }, -- use resize with Ctrl + arrow
+    ["+"] = { "<cmd>vertical resize +1<cr>", desc = "Vertical resize +" },     -- use resize with Ctrl + arrow
     ["_"] = { "<cmd>vertical resize -1<cr>", desc = "Vertical resize -" },
     [")"] = { "<cmd>horizontal resize +1<cr>", desc = "Horizontal resize +" }, -- use resize with Ctrl + arrow
     ["("] = { "<cmd>horizontal resize -1<cr>", desc = "Horizontal resize -" },
@@ -145,9 +143,9 @@ M.general = {
       desc = "LazyGitFilterCurrentFile",
     },
 
--- ╭──────────────────────────────────────────────────────────╮
--- │ git override default                                     │
--- ╰──────────────────────────────────────────────────────────╯
+    -- ╭──────────────────────────────────────────────────────────╮
+    -- │ git override default                                     │
+    -- ╰──────────────────────────────────────────────────────────╯
     ["<leader>gm"] = { "<cmd> Telescope git_commits <CR>", "Git commits" },
     ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "Git status" },
 
@@ -316,19 +314,19 @@ M.nvterm = {
     },
 
     -- new
-    ["<leader>h"] = {
-      function()
-        require("nvterm.terminal").new "horizontal"
-      end,
-      "New horizontal term",
-    },
-
-    ["<leader>v"] = {
-      function()
-        require("nvterm.terminal").new "vertical"
-      end,
-      "New vertical term",
-    },
+    -- ["<leader>h"] = {
+    --   function()
+    --     require("nvterm.terminal").new "horizontal"
+    --   end,
+    --   "New horizontal term",
+    -- },
+    --
+    -- ["<leader>v"] = {
+    --   function()
+    --     require("nvterm.terminal").new "vertical"
+    --   end,
+    --   "New vertical term",
+    -- },
   },
 }
 
