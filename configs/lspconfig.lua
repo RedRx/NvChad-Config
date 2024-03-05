@@ -16,7 +16,7 @@ local servers = {
   "emmet_language_server",
   "jsonls",
   "eslint",
-  "vtsls",
+  -- "vtsls",
   "dockerls",
   "sqlls",
   "yamlls",
@@ -33,7 +33,7 @@ for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
- settings = {
+    settings = {
       typeScript = {
         unusedLocals = "error",
         unusedParameters = "error",
@@ -46,5 +46,5 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- 
+--
 -- lspconfig.pyright.setup { blabla}
